@@ -9,18 +9,16 @@
 	<meta name="keywords" content="Jonathan Kim, personal website, developer resume">
 	<title>This is Jonathan Kim's Web Resume Site</title>
 	<link href="style.css" rel="stylesheet">
-	<script type="text/javascript" src="jquery-1.11.0.min.js"></script>
-	<script type="text/javascript" src="script.js"></script>
-	<script type="text/javascript" src="scroll.js"></script>
 </head>
 
 <body>
+	<div id="wrapper">
 	<!-- Header of the page -->
 	<header>
-		<div class="container">
+		<div class="heading">
+			<h1>Jonathan Kim</h1>
+			<p>Software Developer</p>
 			<nav>
-				<h1>Jonathan Kim</h1>
-				<p>Software Developer</p>
 				<ul>
 					<li><a href="#about">About Me</a></li>
 					<li><a href="#project">Project</a></li>
@@ -29,16 +27,16 @@
 				</ul>
 			</nav>
 		</div>
+		<!-- Profile Picture -->
+		<img class="profpic" src="Images/profilepic.jpg" width="300" height="auto" alt="SID">
 	</header>
 
-
+	<div id="main">
 	<!-- About Me Section -->
 	<section id="about">
 		<h1>About Me</h1>
 		<div class="container">
 			<div class="main-desc">
-				<!-- Profile Picture -->
-				<img class="img-circle" src="Images/profilepic.jpg" width="300" height="auto" alt="SID">
 				<p>
 					Welcome to my website! I am a IT professional holding a bachelor of computer science degree.<br>
 					I am seeking to benefit organizations in the following areas as a Entry/Junior Software
@@ -49,7 +47,6 @@
 		</div>
 	</section>
 
-	<div id="main">
 	<!-- Experience -->
 	<section id="experience">
 		<h2>Experience</h2>
@@ -205,21 +202,23 @@
 						<li>MySQL</li>
 					</ul>
 				</div>
-				<div class="lang">
-					<h3>Spoken Languages</h3>
-					<div class="table">
-						<h4>Fluent: </h4>
-						<ul>
-							<li>English</li>
-							<li>Korean</li>
-						</ul>
-					</div>
-					<div class="table">
-						<h4>Intermediate: </h4>
-						<ul>
-							<li>Japanese</li>
-						</ul>
-					</div>
+			</section>
+
+			<!-- Spoken Language Section -->
+			<section id="lang">
+				<h2>Spoken Languages</h2>
+				<div class="table">
+					<h3>Fluent: </h3>
+					<ul>
+						<li>English</li>
+						<li>Korean</li>
+					</ul>
+				</div>
+				<div class="table">
+					<h3>Intermediate: </h3>
+					<ul>
+						<li>Japanese</li>
+					</ul>
 				</div>
 			</section>
 
@@ -228,16 +227,16 @@
 				<h3>Contacts</h3>
 				<ul>
 					<li><a href="mailto:whkim94@gmail.com">
-							<img src="Images/icon_email.svg" class="ui-li-icon" /> whkim94@gmail.com</a>
+							<img src="Images/icon_email.svg" class="ui-li-icon" />whkim94@gmail.com</a>
 					</li>
 					<li><a href="tel:951-233-0898">
-							<img src="Images/icon_phone.svg" class="ui-li-icon" /> (951)233-0898</a>
+							<img src="Images/icon_phone.svg" class="ui-li-icon" />(951)233-0898</a>
 					</li>
 					<li><a href="https://www.linkedin.com/in/jonathan-w-kim-32881b118/">
-							<img src="Images/icon_linkedin.svg" class="ui-li-icon" /> /jonathan-w-kim-32881b118/</a>
+							<img src="Images/icon_linkedin.svg" class="ui-li-icon" />/jonathan-w-kim-32881b118/</a>
 					</li>
 					<li><a href="https://github.com/whkim94">
-							<img src="Images/icon_github.svg" class="ui-li-icon" /> /whkim94</a>
+							<img src="Images/icon_github.svg" class="ui-li-icon" />/whkim94</a>
 					</li>
 				</ul>
 			</section>
@@ -249,6 +248,7 @@
 	<footer>
 		<p>Made by Jonathan Kim, Copyright &copy; 2019</p>
 	</footer>
+	</div>
 </body>
 
 </html>

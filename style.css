@@ -1,9 +1,13 @@
 @charset "UTF-8";
 body {
-    padding:0;
+    padding: 0;
     margin: 0;
-    background-color: white;
-    font: 16px/1.5 Verdana Helvetica, sans-serif;
+    background-color: #dfe6e9;
+    
+}
+
+#wrapper {
+    position: relative;
 }
 
 .container {
@@ -15,26 +19,58 @@ body {
 /* Header */
 
 header {
+    position: relative;
     background-color: #a2b9bc;
     overflow: hidden;
-    padding: 3em;
+    height: 100vh;
+    background-image: url(Images/background_pic2.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    padding: 2em;
 }
 
 .heading {
-    float: left;
-    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    text-align: left;
     border: 5px solid;
+    color: white;
 }
 
-.heading nav li {
+.heading h1 {
+    margin: 0;
+    font: bold 50pt calibri, sans-serif;
+}
+
+.heading p {
+    font: 30pt calibri, sans-serif;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav li {
     display: inline;
+    list-style: none;
     padding: 0 30px 0 30px;
+    font: bold 12pt calibri, sans-serif;
+    
 }
 
 .profpic {
-    transform: rotate(270deg);
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(270deg);
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
     border-radius: 50%;
-    float: right;
 }
 
 
@@ -43,6 +79,12 @@ header {
 #main{
     float: left;
     padding-left: 50px;
+    background-color: white;
+    
+}
+
+#main h1, h2 {
+    padding-top: 1em;
 }
 
 #main h3 {
@@ -50,6 +92,7 @@ header {
 }
 
 #about, #experience, #project {
+    font: calibri, sans-serif;
     text-align: left;
 }
 
@@ -57,8 +100,9 @@ header {
 
 #sidebar {
     float: right;
-    padding-left: 12px;
-    padding-bottom: 30em;
+    position: relative;
+    padding-left: 10px;
+    padding-bottom: 20em;
     margin-bottom: 30em;
     text-align: left;
     color: white;
@@ -79,7 +123,6 @@ header {
 #sidebar ul {
     list-style: none;
     text-align: left;
-    padding: 0;
     margin: 0;
 }
 
@@ -101,25 +144,44 @@ header {
 }
 
 #contact {
-    margin-top: 2em;
+    position: absolute;
     border: 5px solid;
-    padding: 5px;
-    vertical-align: bottom;
+    padding: 5px 5px 5px 0;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 10%;
+    background-color: #878f99;
 }
 
 #contact h3 {
     margin: 0;
+    font-size: 20pt;
     text-align: center;
+}
+
+#contact a {
+    text-decoration: none;
+    color: #dfe6e9;
+}
+
+#contact a:hover {
+    color: white;
+}
+
+#contact li {
+    list-style: none;
+    padding-top: 5px;
+    padding-left: 0;
+    font-weight: bold;
+    font: italic bold 18pt calibri, sans-serif;   
 }
 
 .ui-li-icon {
     width: 25px;
-    padding-right: 3px;
+    padding-right:8px;
+    vertical-align: text-top;
 }
 
-#contact li {
-    font-weight: bold;
-}
 
 /* Footer */
 

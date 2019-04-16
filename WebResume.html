@@ -9,37 +9,49 @@
 	<meta name="keywords" content="Jonathan Kim, personal website, developer resume">
 	<title>Jonathan Kim's Web Resume</title>
 	<link href="style.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
 	<div id="wrapper">
 	<!-- Header of the page -->
 	<header>
-		<div class="heading">
-			<h1>Jonathan Kim</h1>
-			<p>Software Developer</p>
+		<div class="background-img"></div>
+		<div class="hcontent">
+			<div class="heading">
+				<h1>Jonathan Kim</h1>
+				<p>Software Developer</p>
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#heading">Home</a></li>
+					<li><a href="#about">About Me</a></li>
+					<li><a href="#experience">Experience</a></li>
+					<li><a href="#project">Project</a></li>
+					<li><a href="#skill">Skills</a></li>
+					<li><a href="#contact">Contact Me</a></li>
+				</ul>
+			</nav>
+			<div class="download">
+				<p><a href="Jonathan-Kim-resume(updated).docx">Download Resume</a></p>
+			</div>
+			<!-- Profile Picture -->
+			<img class="profpic" src="Images/profilepic.jpg" alt="SID">
 		</div>
-		<nav>
-			<ul>
-				<li><a href="#about">About Me</a></li>
-				<li><a href="#experience">Experience</a></li>
-				<li><a href="#project">Project</a></li>
-				<li><a href="#contact">Contact Me</a></li>
-				<li><a href="Link">Resume</a></li>
-			</ul>
-		</nav>
-		<!-- Profile Picture -->
-		<img class="profpic" src="Images/profilepic.jpg" alt="SID">
 	</header>
 
 	<div id="main">
 	<!-- About Me Section -->
 	<section id="about">
-		<h1>About Me</h1>
+		<div class="center">
+			<h1>About Me</h1>
+		</div>
 		<div class="container">
 			<div class="main-desc">
 				<p>
-					Welcome to my website! I am a IT professional holding a bachelor of computer science degree.<br>
+					Welcome to my website! <br>
+					I am a IT professional holding a bachelor of computer science degree.<br>
 					I am seeking to benefit organizations in the following areas as a Entry/Junior Software
 					Developer.<br>
 					Experienced in object-oriented programming; developing, testing, and debugging code.
@@ -50,7 +62,9 @@
 
 	<!-- Experience -->
 	<section id="experience">
+		<div class="center">
 		<h2>Experience</h2>
+		</div>
 		<div class="exp-1">
 			<h3>Coding & Math Tutor</h3>
 			<p>June 2018 - Present</p>
@@ -93,7 +107,9 @@
 
 	<!-- Project Experiences -->
 	<section id="project">
+		<div class="center">
 		<h2>Project Experiences</h2>
+		</div>
 		<div class="proj-1">
 			<h3>3D ILP Generator (Python), 2018</h3>
 			<p>Developer, Integer Linear Programming, UC Davis</p>
@@ -155,14 +171,13 @@
 			</ul>
 		</div>
 	</section>
-	</div>
-
-	<div class="container">
-		<aside id="sidebar">
+	
 
 			<!-- Education Information -->
 			<section id="edu">
+				<div class="center">
 				<h2>Education</h2>
+				</div>
 				<div class="desc">
 					<h3>University of California, Davis</h3>
 					<p>B.S. Computer Science</p>
@@ -173,7 +188,9 @@
 
 			<!-- Skills Section -->
 			<section id="skill">
+				<div class="center">
 				<h2>Skills</h2>
+				</div>
 				<div class="environment">
 					<h3>Environnments:</h3>
 					<ul>
@@ -207,7 +224,9 @@
 
 			<!-- Spoken Language Section -->
 			<section id="lang">
+				<div class="center">
 				<h2>Spoken Languages</h2>
+				</div>
 				<div class="table">
 					<h3>Fluent: </h3>
 					<ul>
@@ -222,8 +241,7 @@
 					</ul>
 				</div>
 			</section>
-		</aside>
-	</div>
+		</div>
 
 		<!-- Contact Info Section -->
 		<section id="contact">
@@ -243,11 +261,30 @@
 				</li>
 			</ul>
 		</section>
-	</div>
+	
 
 	<!-- Footer Note -->
 	<footer>
-			<p>Made by Jonathan Kim, Copyright &copy; 2019</p>
+			<p>Copyright &copy; 2019 Jonathan Kim. All Rights Reserved </p>
 	</footer>
+</div>
+<script>
+	$(document).ready(function () {
+		$(document).bind("contextmenu", function (e) {
+			return false;
+		});
+
+		$('img').bind("contextmenu", function (e) {
+			return false;
+		});
+
+		$('img').bind("selectstart", function (e) {
+			return false;
+		});
+	});
+	document.oncontextmenu = function(){return false;}
+	document.onselectstart = function(){return false;}
+</script>
 </body>
+
 </html>

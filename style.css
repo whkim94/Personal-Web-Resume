@@ -2,12 +2,7 @@
 body {
     padding: 0;
     margin: 0;
-    background-color: #dfe6e9;
-    
-}
-
-#wrapper {
-    position: relative;
+    background-color: white;
 }
 
 .container {
@@ -20,14 +15,22 @@ body {
 
 header {
     position: relative;
-    background-color: #a2b9bc;
+    background-color: transparent;
     overflow: hidden;
     height: 100vh;
-    background-image: url(Images/background_pic2.png);
+}
+
+.background-img {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(Images/background_pic3.png);
     background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
-    padding: 2em;
+    z-index: -1;
+    
+    -webkit-filter: brightness(60%)
 }
 
 .heading {
@@ -36,30 +39,63 @@ header {
     top: 60%;
     transform: translate(-50%, -50%);
     text-align: left;
-    border: 5px solid;
     color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
 .heading h1 {
     margin: 0;
-    font: bold 50pt calibri, sans-serif;
+    font-weight: 400;
+    font-size: 50pt;
 }
 
 .heading p {
-    font: 30pt calibri, sans-serif;
+    font-weight: 100;
+    font-size: 20pt;
+}
+
+.download {
+    position: absolute;
+    left: 50%;
+    top: 80%;
+    transform: translateX(-50%);
+    background-color: #2c3e50;
+    padding: 15px 25px;
+    border-radius: 20px;
+    text-transform: uppercase;
+}
+
+.download a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+.download a:hover {
+    color: black;
+}
+
+nav {
+    text-align: center;
+    padding-top: 1em;
 }
 
 nav a {
     text-decoration: none;
     color: white;
+    padding: 5px 10px 5px 10px;
+}
+
+nav a:hover {
+    background-color: #2c3e50;
+    border-radius: 20px;
 }
 
 nav li {
     display: inline;
     list-style: none;
-    padding: 0 30px 0 30px;
-    font: bold 12pt calibri, sans-serif;
-    
+    margin: 0;
+    font-size: 14pt;
 }
 
 .profpic {
@@ -70,21 +106,35 @@ nav li {
     width: 150px;
     height: 150px;
     object-fit: cover;
+    border: 5px solid white;
     border-radius: 50%;
 }
 
-
 /* Main Contents */
 
-#main{
-    float: left;
+#main {
     padding-left: 50px;
-    background-color: white;
-    
+    padding-right: 0;
 }
 
-#main h1, h2 {
-    padding-top: 1em;
+.center {
+    display: inline-block;
+    position: relative;
+    padding-top: 10em;
+    padding-bottom: 5em;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.center h1, h2 {
+    padding: 14px 20px;
+    color: white;
+    background-color: #34495e;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 14pt;
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
 
 #main h3 {
@@ -92,50 +142,17 @@ nav li {
 }
 
 #about, #experience, #project {
-    font: calibri, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 13pt;
+    letter-spacing: 1px;
     text-align: left;
 }
 
 /* Aside */
 
-#sidebar {
-    float: right;
-    position: relative;
-    padding-left: 10px;
-    padding-bottom: 20em;
-    margin-bottom: 30em;
-    text-align: left;
-    color: white;
-    background-color: #878f99;
-    width: 300px;
-}
-
-#sidebar h2 {
-    text-transform: uppercase;
-    font-size: 18pt;
-}
-
-#sidebar h3 {
-    margin-top: 1em;
-    margin-bottom: 0;
-}
-
-#sidebar ul {
-    list-style: none;
-    text-align: left;
-    margin: 0;
-}
-
 #edu h3, p {
     margin: 0;
-}
-
-#skill {
-    margin-top: 2em;
-}
-
-#lang {
-    margin-top: 2em;
 }
 
 #lang li {
@@ -144,12 +161,10 @@ nav li {
 }
 
 #contact {
-    position: absolute;
+    display: inline-block;
+    position: relative;
     border: 5px solid;
     padding: 5px 5px 5px 0;
-    left: 50%;
-    transform: translate(-50%);
-    bottom: 10%;
     background-color: #878f99;
 }
 
@@ -173,22 +188,22 @@ nav li {
     padding-top: 5px;
     padding-left: 0;
     font-weight: bold;
-    font: italic bold 18pt calibri, sans-serif;   
+    font: italic bold 18pt calibri, sans-serif;
 }
 
 .ui-li-icon {
     width: 25px;
-    padding-right:8px;
+    padding-right: 8px;
     vertical-align: text-top;
 }
-
 
 /* Footer */
 
 footer {
     height: 70px;
     text-align: center;
-    background-color: #a2b9bc;
+    background-color: #2c3e50;
     font-size: 13pt;
     font-weight: bold;
+    margin-top: 20em;
 }

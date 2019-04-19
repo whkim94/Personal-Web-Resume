@@ -23,6 +23,12 @@ body {
     z-index: 1;
 }
 
+.preloader.complete {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
 .preloader:before {
     content: '';
     position: absolute;
@@ -51,11 +57,7 @@ body {
     right: -50%;
 }
 
-.preloader.complete {
-    opacity: 0;
-    visibility: hidden;
-    pointer-events: none;
-}
+
 
 /* Header */
 
@@ -240,28 +242,127 @@ nav li {
 
 /* Basics */
 
+#lefter {
+    float: left;
+    width: 50%;
+}
+
+#righter {
+    float: right;
+    width: 50%;
+}
+
+#skill h3 {
+    position: relative;
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 12pt;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
 #skill ul {
     padding-left: 0;
+    padding-bottom: 1em;
 }
 
 #skill li {
     list-style: none;
-    width: 30%;
+    width: 70%;
     margin-bottom: 1em;
-    background-color: #c2ccda;
-}
-
-#bars{
-    width: 1%;
-    height: 10px;
-    background: #34495e;
+    font-size: 11pt;
 }
 
 #skill .bar {
-    width: 1%;
+    display: block;
+    position: relative;
+    width: 100%;
     height: 10px;
-    background: #34495e;
+    background: white;
+    overflow: hidden;
 }
+
+.progress {
+    height: 10px;
+    background: #2c3e50;
+}
+
+.linux {
+    width: 70%;
+}
+
+.unix {
+    width: 70%;
+}
+
+.windows {
+    width: 85%;
+}
+
+.bootstrap {
+    width: 60%;
+}
+
+.jquery {
+    width: 70%;
+}
+
+.git {
+    width: 70%;
+}
+
+.tfs {
+    width: 50%;
+}
+
+.ms {
+    width: 90%;
+}
+
+.cplus {
+    width: 75%;
+}
+
+.csharp {
+    width: 70%;
+}
+
+.python {
+    width: 80%;
+}
+
+.java {
+    width: 70%;
+}
+
+.web {
+    width: 85%;
+}
+
+.jscript {
+    width: 70%;
+}
+
+.sql {
+    width: 65%;
+}
+
+.done {
+    position: absolute;
+    right: 0;
+    width: 95%;
+    height: 10px;
+    background: white;
+    transition: 4s;
+}
+
+.done.animation {
+    right: -95%;
+}
+
 
 #lang li {
     display: inline;

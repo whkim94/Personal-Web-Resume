@@ -31,4 +31,4 @@ $(document).on('scroll', function() {
   if($(this).scrollTop() >= $('#skill').position().top){
     $('.done').addClass('animation');
   }
-})
+});

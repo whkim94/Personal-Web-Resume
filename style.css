@@ -11,6 +11,52 @@ body {
     overflow: hidden;
 }
 
+/* Preloader */
+
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 1s;
+    z-index: 1;
+}
+
+.preloader:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: #2c3e50;
+    transition: 1s;
+}
+
+.preloader.complete:before {
+    left: -50%;
+}
+
+.preloader:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background: #2c3e50;
+    transition: 1s;
+}
+
+.preloader.complete:after {
+    right: -50%;
+}
+
+.preloader.complete {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
 /* Header */
 
 header {
@@ -291,10 +337,19 @@ textarea {
 /* Footer */
 
 footer {
+    position: relative;
+    margin-top: 10em;
     height: 70px;
     text-align: center;
     background-color: #2c3e50;
-    font-size: 13pt;
-    font-weight: bold;
-    margin-top: 20em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 12pt;
+    color: white;
+}
+
+footer p {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }

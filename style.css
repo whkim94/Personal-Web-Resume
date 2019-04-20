@@ -5,9 +5,7 @@ body {
     background-color: #ecf0f1;
 }
 
-.container {
-    max-width: 950px;
-    margin: auto;
+#wrapper {
     overflow: hidden;
 }
 
@@ -123,6 +121,7 @@ header {
 
 .download a:hover {
     color: black;
+    transition: 0.4s;
 }
 
 nav {
@@ -134,11 +133,13 @@ nav a {
     text-decoration: none;
     color: white;
     padding: 5px 10px 5px 10px;
+    border-radius: 20px;
 }
 
 nav a:hover {
     background-color: #2c3e50;
     border-radius: 20px;
+    transition: 0.4s;
 }
 
 nav li {
@@ -202,6 +203,7 @@ nav li {
     letter-spacing: 2px;
     left: 50%;
     transform: translateX(-50%);
+    box-shadow: 3px 3px 5px;
 }
 
 #greeting {
@@ -262,11 +264,13 @@ nav li {
     font-size: 12pt;
     text-transform: uppercase;
     letter-spacing: 2px;
+    box-shadow: 3px 3px 5px;
 }
 
 #skill ul {
     padding-left: 0;
-    padding-bottom: 1em;
+    margin-top: 1.5em;
+    margin-bottom: 2.5em;
 }
 
 #skill li {
@@ -376,11 +380,6 @@ nav li {
     width: 65%;
 }
 
-#contact {
-    float: right;
-    width: 30%;
-}
-
 input[type=text], textarea {
     width: 40%;
     padding: 12px;
@@ -408,6 +407,16 @@ input[type=submit]:hover {
 
 textarea {
     width: 100%;
+}
+
+#message {
+    height: 200px;
+}
+
+#contact {
+    float: right;
+    width: 30%;
+    box-shadow: 2px 2px 5px;
 }
 
 #contact {

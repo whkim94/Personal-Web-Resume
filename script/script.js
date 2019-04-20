@@ -32,3 +32,4 @@ $(document).on('scroll', function() {
     $('.done').addClass('animation');
   }
 });
+

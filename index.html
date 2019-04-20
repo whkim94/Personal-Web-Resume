@@ -24,10 +24,10 @@
 		<header>
 			<div class="background-img"></div>
 			<div class="hcontent">
-				<div class="heading">
+				<span class="heading">
 					<h1>Jonathan Kim</h1>
 					<p>Software | Web Developer</p>
-				</div>
+				</span>
 				<nav>
 					<ul>
 						<li><a href="#heading">Home</a></li>
@@ -366,13 +366,12 @@
 
 				<div class="row">
 					<div id="c-form">
-						<form action="script/contact.php">
-							<input type="text" id="name" name="fullname" placeholder="Name">
-							<input type="text" id="email" name="email" placeholder="Email">
-							<input type="text" id="subject" name="subject" placeholder="Subject">
-							<textarea id="message" name="message" placeholder="Message" style="height:200px"></textarea>
-
-							<input type="submit" value="Submit">
+						<form action="contacts.php" method="POST">
+							<input type="text" id="name" name="name" placeholder="Name">
+							<!--<input type="text" id="email" name="email" placeholder="Email">-->
+							<input type="text" id="subject" name="subject" placeholder="Subject" required>
+							<textarea id="message" name="message" placeholder="Message" required></textarea>
+							<input type="submit" name="submit" value="Submit">
 						</form>
 					</div>
 					<div id="contact">
@@ -401,8 +400,5 @@
 		<p>Copyright &copy; 2019 Jonathan W. Kim. All Rights Reserved </p>
 	</footer>
 
-
-	<?php include 'contact.php';?>
 </body>
-
 </html>

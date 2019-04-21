@@ -55,9 +55,12 @@ body {
     right: -50%;
 }
 
-/* Header */
+/* Media for Mobile */
 
 @media all and (max-width:400px) {
+
+    /* Header */
+
     header {
         position: relative;
         background-color: transparent;
@@ -75,7 +78,6 @@ body {
         background-size: 200%;
         background-attachment: fixed;
         z-index: -1;
-
         -webkit-filter: brightness(60%)
     }
     .heading {
@@ -133,7 +135,6 @@ body {
     nav a {
         text-decoration: none;
         color: white;
-        
         border-radius: 20px;
     }
     nav a:hover {
@@ -161,289 +162,246 @@ body {
 
     /* Main Contents */
 
-#main {
-    padding: 0 2em;
+    #main {
+        padding: 0 2em;
+    }
+    .center {
+        display: inline-block;
+        position: relative;
+        padding-bottom: 3em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .center h1 {
+        padding: 14px 20px;
+        color: white;
+        background-color: #34495e;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 14pt;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    #main h3 {
+        margin: 0;
+    }
+    #about h2 {
+        position: relative;
+        display: inline-block;
+        margin-right: 100%;
+        padding: 10px 15px;
+        background-color: white;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 12pt;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 3px 3px 5px;
+        -moz-box-shadow: 3px 3px 5px;
+        -webkit-box-shadow: 3px 3px 5px;
+    }
+    #greeting {
+        width: 100%;
+    }
+    #edu {
+        width: 100%;
+        margin-top: 4em;
+        text-align: center;
+    }
+    #edu p {
+        margin: 0;
+    }
+    .univ-logo {
+        width: 180px;
+        height: 180px;
+    }
+    #about, #experience, #project, #skill, #lang, #contacts {
+        padding-top: 12em;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 13pt;
+        letter-spacing: 1px;
+        text-align: left;
+    }
+
+    /* Basics */
+
+    #skill h3 {
+        position: relative;
+        display: inline-block;
+        padding: 10px 15px;
+        background-color: white;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 12pt;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        box-shadow: 3px 3px 5px;
+    }
+    #skill ul {
+        padding-left: 0;
+        margin-top: 1.5em;
+        margin-bottom: 2.5em;
+    }
+    #skill li {
+        list-style: none;
+        width: 100%;
+        margin-bottom: 1em;
+        font-size: 11pt;
+    }
+    #skill .bar {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 10px;
+        background: white;
+        overflow: hidden;
+    }
+    .progress {
+        height: 10px;
+        background: #2c3e50;
+    }
+    .linux {
+        width: 70%;
+    }
+    .unix {
+        width: 70%;
+    }
+    .windows {
+        width: 85%;
+    }
+    .bootstrap {
+        width: 60%;
+    }
+    .jquery {
+        width: 70%;
+    }
+    .git {
+        width: 70%;
+    }
+    .tfs {
+        width: 50%;
+    }
+    .ms {
+        width: 90%;
+    }
+    .cplus {
+        width: 75%;
+    }
+    .csharp {
+        width: 70%;
+    }
+    .python {
+        width: 80%;
+    }
+    .java {
+        width: 70%;
+    }
+    .web {
+        width: 85%;
+    }
+    .jscript {
+        width: 70%;
+    }
+    .sql {
+        width: 65%;
+    }
+    .done {
+        position: absolute;
+        right: 0;
+        width: 95%;
+        height: 10px;
+        background: white;
+        transition: 4s;
+    }
+    .done.animation {
+        right: -95%;
+    }
+    #lang li {
+        display: inline;
+        padding: 0 40px 0 0;
+    }
+    /* Contact */
+    #c-form {
+        width: 100%;
+    }
+    input[type=text], textarea {
+        width: 40%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-top: 1em;
+        margin-right: 5px;
+        resize: vertical;
+    }
+    input[type=submit] {
+        background-color: #2c3e50;
+        color: white;
+        padding: 12px 20px;
+        margin-top: 1em;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    input[type=submit]:hover {
+        background-color: #19242e;
+    }
+    textarea {
+        width: 100%;
+    }
+    #message {
+        height: 200px;
+    }
+    #contact {
+        width: 100%;
+        box-shadow: 2px 2px 5px;
+        background-color: rgb(247, 245, 245);
+    }
+    #contact a {
+        text-decoration: none;
+        color: black;
+    }
+    #contact a:hover {
+        color: #34495e;
+    }
+    #contact li {
+        list-style: none;
+        padding: 10px 0;
+        font: italic 12pt calibri, sans-serif;
+    }
+    .ui-li-icon {
+        width: 20px;
+        padding-right: 8px;
+        vertical-align: text-top;
+    }
+    /* Footer */
+    footer {
+        position: relative;
+        margin-top: 10em;
+        height: 70px;
+        text-align: center;
+        background-color: #2c3e50;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 100;
+        font-size: 8pt;
+        color: white;
+    }
+    footer p {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 }
 
-.center {
-    display: inline-block;
-    position: relative;
-    padding-bottom: 3em;
-    left: 50%;
-    transform: translateX(-50%);
-}
+/* Media for Labtop-Desktop */
 
-.center h1 {
-    padding: 14px 20px;
-    color: white;
-    background-color: #34495e;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 14pt;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
+@media all and (min-width:401px) {
 
-#main h3 {
-    margin: 0;
-}
+    /* Header */
 
-#about h2 {
-    position: relative;
-    display: inline-block;
-    margin-right: 100%;
-    padding: 10px 15px;
-    background-color: white;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 12pt;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    left: 50%;
-    transform: translateX(-50%);
-    box-shadow: 3px 3px 5px;
-    -moz-box-shadow: 3px 3px 5px;
-    -webkit-box-shadow: 3px 3px 5px;
-}
-
-#greeting {
-    width: 100%;
-}
-
-#edu {
-    width: 100%;
-    text-align: center;
-}
-
-#edu p {
-    margin: 0;
-}
-
-.univ-logo {
-    width: 180px;
-    height: 180px;
-}
-
-#about, #experience, #project, #skill, #lang, #contacts {
-    padding-top: 12em;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 13pt;
-    letter-spacing: 1px;
-    text-align: left;
-}
-
-/* Basics */
-
-
-#skill h3 {
-    position: relative;
-    display: inline-block;
-    padding: 10px 15px;
-    background-color: white;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 12pt;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    box-shadow: 3px 3px 5px;
-}
-
-#skill ul {
-    padding-left: 0;
-    margin-top: 1.5em;
-    margin-bottom: 2.5em;
-}
-
-#skill li {
-    list-style: none;
-    width: 100%;
-    margin-bottom: 1em;
-    font-size: 11pt;
-}
-
-#skill .bar {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 10px;
-    background: white;
-    overflow: hidden;
-}
-
-.progress {
-    height: 10px;
-    background: #2c3e50;
-}
-
-.linux {
-    width: 70%;
-}
-
-.unix {
-    width: 70%;
-}
-
-.windows {
-    width: 85%;
-}
-
-.bootstrap {
-    width: 60%;
-}
-
-.jquery {
-    width: 70%;
-}
-
-.git {
-    width: 70%;
-}
-
-.tfs {
-    width: 50%;
-}
-
-.ms {
-    width: 90%;
-}
-
-.cplus {
-    width: 75%;
-}
-
-.csharp {
-    width: 70%;
-}
-
-.python {
-    width: 80%;
-}
-
-.java {
-    width: 70%;
-}
-
-.web {
-    width: 85%;
-}
-
-.jscript {
-    width: 70%;
-}
-
-.sql {
-    width: 65%;
-}
-
-.done {
-    position: absolute;
-    right: 0;
-    width: 95%;
-    height: 10px;
-    background: white;
-    transition: 4s;
-}
-
-.done.animation {
-    right: -95%;
-}
-
-#lang li {
-    display: inline;
-    padding: 0 40px 0 0;
-}
-
-/* Contact */
-
-#c-form {
-    width: 100%;
-}
-
-input[type=text], textarea {
-    width: 40%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-    margin-top: 1em;
-    margin-right: 5px;
-    resize: vertical;
-}
-
-input[type=submit] {
-    background-color: #2c3e50;
-    color: white;
-    padding: 12px 20px;
-    margin-top: 1em;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-input[type=submit]:hover {
-    background-color: #19242e;
-}
-
-textarea {
-    width: 100%;
-}
-
-#message {
-    height: 200px;
-}
-
-#contact {
-    width: 100%;
-    box-shadow: 2px 2px 5px;
-    background-color: rgb(247, 245, 245);
-}
-
-#contact a {
-    text-decoration: none;
-    color: black;
-}
-
-#contact a:hover {
-    color: #34495e;
-}
-
-#contact li {
-    list-style: none;
-    padding: 10px 0;
-    font: italic 12pt calibri, sans-serif;
-}
-
-.ui-li-icon {
-    width: 20px;
-    padding-right: 8px;
-    vertical-align: text-top;
-}
-
-/* Footer */
-
-footer {
-    position: relative;
-    margin-top: 10em;
-    height: 70px;
-    text-align: center;
-    background-color: #2c3e50;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-    font-size: 8pt;
-    color: white;
-}
-
-footer p {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
-}
-
-
-/* Media 1024px */
-@media all and (min-width:410px) {
     header {
         position: relative;
         background-color: transparent;
@@ -502,12 +460,14 @@ footer p {
     }
     nav {
         position: fixed;
+        width: 100%;
         text-align: center;
         padding-top: 1em;
+        padding-bottom: 1em;
         left: 50%;
         transform: translateX(-50%);
         z-index: 1;
-        transition: 1s;
+        transition: 0.5s;
     }
     nav.fixed {
         background: #2c3e50;
@@ -519,7 +479,8 @@ footer p {
         border-radius: 20px;
     }
     nav a:hover {
-        background-color: #2c3e50;
+        background-color: #ecf0f1;
+        color: black;
         border-radius: 20px;
         transition: 0.4s;
     }
@@ -540,306 +501,256 @@ footer p {
         border: 5px solid white;
         border-radius: 50%;
     }
+    /* Main Contents */
+    #main {
+        padding: 0 10em;
+    }
+    .center {
+        display: inline-block;
+        position: relative;
+        padding-bottom: 3em;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .center h1 {
+        padding: 14px 20px;
+        color: white;
+        background-color: #34495e;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 14pt;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+    #main h3 {
+        margin: 0;
+    }
+    #about h2 {
+        position: relative;
+        display: inline-block;
+        margin-right: 100%;
+        padding: 10px 15px;
+        background-color: white;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 12pt;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        left: 50%;
+        transform: translateX(-50%);
+        box-shadow: 3px 3px 5px;
+        -moz-box-shadow: 3px 3px 5px;
+        -webkit-box-shadow: 3px 3px 5px;
+    }
+    #greeting {
+        float: left;
+        width: 50%;
+    }
+    #greeting p{
+        padding: 0 50px;
+        line-height: 20px
+    }
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    #edu {
+        float: right;
+        width: 50%;
+        text-align: center;
+    }
+    #edu p {
+        margin: 0;
+    }
+    .univ-logo {
+        width: 180px;
+        height: 180px;
+    }
+    #about, #experience, #project, #skill, #lang, #contacts {
+        padding-top: 12em;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 13pt;
+        letter-spacing: 1px;
+        text-align: left;
+    }
+    /* Basics */
+    #lefter {
+        float: left;
+        width: 50%;
+    }
+    #righter {
+        float: right;
+        width: 50%;
+    }
+    #skill h3 {
+        position: relative;
+        display: inline-block;
+        padding: 10px 15px;
+        background-color: white;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 400;
+        font-size: 12pt;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        box-shadow: 3px 3px 5px;
+    }
+    #skill ul {
+        padding-left: 0;
+        margin-top: 1.5em;
+        margin-bottom: 2.5em;
+    }
+    #skill li {
+        list-style: none;
+        width: 70%;
+        margin-bottom: 1em;
+        font-size: 11pt;
+    }
+    #skill .bar {
+        display: block;
+        position: relative;
+        width: 100%;
+        height: 10px;
+        background: white;
+        overflow: hidden;
+    }
+    .progress {
+        height: 10px;
+        background: #2c3e50;
+    }
+    .linux {
+        width: 70%;
+    }
+    .unix {
+        width: 70%;
+    }
+    .windows {
+        width: 85%;
+    }
+    .bootstrap {
+        width: 60%;
+    }
+    .jquery {
+        width: 70%;
+    }
+    .git {
+        width: 70%;
+    }
+    .tfs {
+        width: 50%;
+    }
+    .ms {
+        width: 90%;
+    }
+    .cplus {
+        width: 75%;
+    }
+    .csharp {
+        width: 70%;
+    }
+    .python {
+        width: 80%;
+    }
+    .java {
+        width: 70%;
+    }
+    .web {
+        width: 85%;
+    }
+    .jscript {
+        width: 70%;
+    }
+    .sql {
+        width: 65%;
+    }
+    .done {
+        position: absolute;
+        right: 0;
+        width: 95%;
+        height: 10px;
+        background: white;
+        transition: 4s;
+    }
+    .done.animation {
+        right: -95%;
+    }
+    svg {
+        width: 30%;
 
+    }
 
-/* Main Contents */
-
-#main {
-    padding: 0 10em;
-}
-
-.center {
-    display: inline-block;
-    position: relative;
-    padding-bottom: 3em;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
-.center h1 {
-    padding: 14px 20px;
-    color: white;
-    background-color: #34495e;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 14pt;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-#main h3 {
-    margin: 0;
-}
-
-#about h2 {
-    position: relative;
-    display: inline-block;
-    margin-right: 100%;
-    padding: 10px 15px;
-    background-color: white;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 12pt;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    left: 50%;
-    transform: translateX(-50%);
-    box-shadow: 3px 3px 5px;
-    -moz-box-shadow: 3px 3px 5px;
-    -webkit-box-shadow: 3px 3px 5px;
-}
-
-#greeting {
-    float: left;
-    width: 50%;
-}
-
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-#edu {
-    float: right;
-    width: 50%;
-    text-align: center;
-}
-
-#edu p {
-    margin: 0;
-}
-
-.univ-logo {
-    width: 180px;
-    height: 180px;
-}
-
-#about, #experience, #project, #skill, #lang, #contacts {
-    padding-top: 12em;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 13pt;
-    letter-spacing: 1px;
-    text-align: left;
-}
-
-/* Basics */
-
-#lefter {
-    float: left;
-    width: 50%;
-}
-
-#righter {
-    float: right;
-    width: 50%;
-}
-
-#skill h3 {
-    position: relative;
-    display: inline-block;
-    padding: 10px 15px;
-    background-color: white;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    font-size: 12pt;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    box-shadow: 3px 3px 5px;
-}
-
-#skill ul {
-    padding-left: 0;
-    margin-top: 1.5em;
-    margin-bottom: 2.5em;
-}
-
-#skill li {
-    list-style: none;
-    width: 70%;
-    margin-bottom: 1em;
-    font-size: 11pt;
-}
-
-#skill .bar {
-    display: block;
-    position: relative;
-    width: 100%;
-    height: 10px;
-    background: white;
-    overflow: hidden;
-}
-
-.progress {
-    height: 10px;
-    background: #2c3e50;
-}
-
-.linux {
-    width: 70%;
-}
-
-.unix {
-    width: 70%;
-}
-
-.windows {
-    width: 85%;
-}
-
-.bootstrap {
-    width: 60%;
-}
-
-.jquery {
-    width: 70%;
-}
-
-.git {
-    width: 70%;
-}
-
-.tfs {
-    width: 50%;
-}
-
-.ms {
-    width: 90%;
-}
-
-.cplus {
-    width: 75%;
-}
-
-.csharp {
-    width: 70%;
-}
-
-.python {
-    width: 80%;
-}
-
-.java {
-    width: 70%;
-}
-
-.web {
-    width: 85%;
-}
-
-.jscript {
-    width: 70%;
-}
-
-.sql {
-    width: 65%;
-}
-
-.done {
-    position: absolute;
-    right: 0;
-    width: 95%;
-    height: 10px;
-    background: white;
-    transition: 4s;
-}
-
-.done.animation {
-    right: -95%;
-}
-
-#lang li {
-    display: inline;
-    padding: 0 40px 0 0;
-}
-
-/* Contact */
-
-#c-form {
-    float: left;
-    width: 65%;
-}
-
-input[type=text], textarea {
-    width: 40%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-    margin-top: 1em;
-    margin-right: 5px;
-    resize: vertical;
-}
-
-input[type=submit] {
-    background-color: #2c3e50;
-    color: white;
-    padding: 12px 20px;
-    margin-top: 1em;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-input[type=submit]:hover {
-    background-color: #19242e;
-}
-
-textarea {
-    width: 100%;
-}
-
-#message {
-    height: 200px;
-}
-
-#contact {
-    float: right;
-    width: 30%;
-    box-shadow: 2px 2px 5px;
-    background-color: rgb(247, 245, 245);
-}
-
-#contact a {
-    text-decoration: none;
-    color: black;
-}
-
-#contact a:hover {
-    color: #34495e;
-}
-
-#contact li {
-    list-style: none;
-    padding: 10px 0;
-    font: italic 12pt calibri, sans-serif;
-}
-
-.ui-li-icon {
-    width: 20px;
-    padding-right: 8px;
-    vertical-align: text-top;
-}
-
-/* Footer */
-
-footer {
-    position: relative;
-    margin-top: 10em;
-    height: 70px;
-    text-align: center;
-    background-color: #2c3e50;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-    font-size: 12pt;
-    color: white;
-}
-
-footer p {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
+    /* Contact */
+    #c-form {
+        float: left;
+        width: 65%;
+    }
+    input[type=text], textarea {
+        width: 40%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+        margin-top: 1em;
+        margin-right: 5px;
+        resize: vertical;
+    }
+    input[type=submit] {
+        background-color: #2c3e50;
+        color: white;
+        padding: 12px 20px;
+        margin-top: 1em;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    input[type=submit]:hover {
+        background-color: #19242e;
+    }
+    textarea {
+        width: 100%;
+    }
+    #message {
+        height: 200px;
+    }
+    #contact {
+        float: right;
+        width: 30%;
+        box-shadow: 2px 2px 5px;
+        background-color: rgb(247, 245, 245);
+    }
+    #contact a {
+        text-decoration: none;
+        color: black;
+    }
+    #contact a:hover {
+        color: #34495e;
+    }
+    #contact li {
+        list-style: none;
+        padding: 10px 0;
+        font: italic 12pt calibri, sans-serif;
+    }
+    .ui-li-icon {
+        width: 20px;
+        padding-right: 8px;
+        vertical-align: text-top;
+    }
+    /* Footer */
+    footer {
+        position: relative;
+        margin-top: 10em;
+        height: 70px;
+        text-align: center;
+        background-color: #2c3e50;
+        font-family: 'Roboto', sans-serif;
+        font-weight: 100;
+        font-size: 12pt;
+        color: white;
+    }
+    footer p {
+        position: relative;
+        top: 50%;
+        transform: translateY(-50%);
+    }
 }

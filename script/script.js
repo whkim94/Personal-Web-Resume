@@ -24,6 +24,17 @@ $(window).on('load',function() {
 });
 
 
+// Mobile Navbar toggle
+
+function mobileMenu() {
+  if($('.navlist').css('display') === 'none') {
+    $('.navlist').css('display', 'block');
+  } else {
+    $('.navlist').css('display', 'none');
+  } 
+}
+
+
 // Progress animations is triggered when viewer scrolls down into certain section
 
 $(document).on('scroll', function() {

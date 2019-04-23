@@ -55,12 +55,61 @@ body {
     right: -50%;
 }
 
+/* SKill Progress Section */
+.linux {
+    width: 70%;
+}
+.unix {
+    width: 70%;
+}
+.windows {
+    width: 85%;
+}
+.bootstrap {
+    width: 60%;
+}
+.jquery {
+    width: 70%;
+}
+.git {
+    width: 70%;
+}
+.tfs {
+    width: 50%;
+}
+.ms {
+    width: 90%;
+}
+.cplus {
+    width: 75%;
+}
+.csharp {
+    width: 70%;
+}
+.python {
+    width: 80%;
+}
+.java {
+    width: 70%;
+}
+.web {
+    width: 85%;
+}
+.jscript {
+    width: 70%;
+}
+.php {
+    width: 55%;
+}
+.sql {
+    width: 65%;
+}
+
 /* Media for Mobile */
 
 @media all and (max-width:400px) {
 
     /* Header */
-
     header {
         position: relative;
         background-color: transparent;
@@ -92,7 +141,7 @@ body {
     .heading h1 {
         margin: 0;
         font-weight: 400;
-        font-size: 15pt;
+        font-size: 22pt;
     }
     .heading p {
         font-weight: 100;
@@ -103,7 +152,7 @@ body {
     .download {
         position: absolute;
         left: 50%;
-        top: 70%;
+        top: 75%;
         transform: translateX(-50%);
         background-color: #2c3e50;
         padding: 1px 15px;
@@ -121,32 +170,40 @@ body {
         transition: 0.4s;
     }
     nav {
-        position: fixed;
-        text-align: center;
-        padding-top: 0.5em;
-        left: 50%;
-        transform: translateX(-50%);
+        position: relative;
+        overflow: hidden;
+        height: 50vh;
         z-index: 1;
-        transition: 1s;
     }
-    nav.fixed {
+    .hamburger {
+        position: fixed;
+        display: block;
+        right: 0;
+        margin-right: 1em;
+        margin-top: 1em;
+        padding: .5em .8em .8em .8em; 
+        background-color: #2c3e50;
+        color:white;
+        z-index: 1;
+    }
+
+    .navlist {
+        position: fixed;
+        width: 100%;
+        display: none;
+        margin-top: 3em;
+        padding-left: 0;
         background: #2c3e50;
+        text-align: center; 
     }
     nav a {
         text-decoration: none;
-        color: white;
-        border-radius: 20px;
-    }
-    nav a:hover {
-        background-color: #2c3e50;
-        border-radius: 20px;
-        transition: 0.4s;
-    }
-    nav li {
-        display: inline;
         list-style: none;
-        margin: 0;
-        font-size: 8pt;
+        display: block;
+        padding: 14px 16px;
+        color: white;
+        font-size: 17px;
+        border-radius: 20px;
     }
     .profpic {
         position: absolute;
@@ -262,51 +319,6 @@ body {
     .progress {
         height: 10px;
         background: #2c3e50;
-    }
-    .linux {
-        width: 70%;
-    }
-    .unix {
-        width: 70%;
-    }
-    .windows {
-        width: 85%;
-    }
-    .bootstrap {
-        width: 60%;
-    }
-    .jquery {
-        width: 70%;
-    }
-    .git {
-        width: 70%;
-    }
-    .tfs {
-        width: 50%;
-    }
-    .ms {
-        width: 90%;
-    }
-    .cplus {
-        width: 75%;
-    }
-    .csharp {
-        width: 70%;
-    }
-    .python {
-        width: 80%;
-    }
-    .java {
-        width: 70%;
-    }
-    .web {
-        width: 85%;
-    }
-    .jscript {
-        width: 70%;
-    }
-    .sql {
-        width: 65%;
     }
     .done {
         position: absolute;
@@ -472,6 +484,9 @@ body {
     nav.fixed {
         background: #2c3e50;
     }
+    .hamburger {
+        display: none;
+    }
     nav a {
         text-decoration: none;
         color: white;
@@ -618,51 +633,6 @@ body {
     .progress {
         height: 10px;
         background: #2c3e50;
-    }
-    .linux {
-        width: 70%;
-    }
-    .unix {
-        width: 70%;
-    }
-    .windows {
-        width: 85%;
-    }
-    .bootstrap {
-        width: 60%;
-    }
-    .jquery {
-        width: 70%;
-    }
-    .git {
-        width: 70%;
-    }
-    .tfs {
-        width: 50%;
-    }
-    .ms {
-        width: 90%;
-    }
-    .cplus {
-        width: 75%;
-    }
-    .csharp {
-        width: 70%;
-    }
-    .python {
-        width: 80%;
-    }
-    .java {
-        width: 70%;
-    }
-    .web {
-        width: 85%;
-    }
-    .jscript {
-        width: 70%;
-    }
-    .sql {
-        width: 65%;
     }
     .done {
         position: absolute;

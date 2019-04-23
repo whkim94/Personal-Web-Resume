@@ -1,1 +1,5 @@
 .DS_Store
+README.md
+.gitignore
+.gitattributes
+script/contact.php
